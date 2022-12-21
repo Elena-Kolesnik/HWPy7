@@ -2,18 +2,13 @@
 
 import func1
 import Convert1
+import view
+
 
 command=0
 exitflag=0
 while exitflag==0:
-    print ('*************************************')
-    print (' Текстовая база телефонов')
-    print (' Нажмите: ')
-    print ('1 Для ввода данных в базу')
-    print ('2 Для вызова функции 1')
-    print ('3 Для конвертации базы в формат 1')
-    print ('0 Для завершения программы')
-    print ('*************************************')
+    view.printmenu()
     try:
         command =int(input())
         if command==1:
@@ -28,8 +23,7 @@ while exitflag==0:
             print('База сконвертирована в файл convert1.txt')
             exitflag = 1
         else:
-            print ('Неправильный ввод! Пожалуйста,повторите: ')
+            view.printerror()
     except:
-        print ('Неправильный ввод! Пожалуйста,повторите: ')
-
+        view.printerror()
     
