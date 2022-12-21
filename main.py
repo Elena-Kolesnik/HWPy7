@@ -27,6 +27,8 @@ while exitflag==0:
             Convert1.Convert()
             print('База сконвертирована в файл convert1.txt')
             exitflag = 1
+        else:
+            print ('Неправильный ввод! Пожалуйста,повторите: ')
     except:
         print ('Неправильный ввод! Пожалуйста,повторите: ')
 
