@@ -1,4 +1,5 @@
 # autor Sergey Mitroshin
+# main module 
 
 import func1
 import Convert1
@@ -20,7 +21,7 @@ while exitflag==0:
             exitflag = 1
         elif command == 3:
             Convert1.Convert()
-            print('База сконвертирована в файл convert1.txt')
+            view.conv1ok()
             exitflag = 1
         else:
             view.printerror()

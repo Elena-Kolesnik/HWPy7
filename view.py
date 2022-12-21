@@ -1,4 +1,5 @@
 # autor Sergey Mitroshin
+# view module
 
 def printmenu():
     print ('*************************************')
@@ -12,4 +13,7 @@ def printmenu():
 
 def printerror():
     print ('Неправильный ввод! Пожалуйста,повторите: ')
+
+def conv1ok():
+        print('База сконвертирована в файл convert1.txt')
 
