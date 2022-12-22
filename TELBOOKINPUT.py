@@ -1,5 +1,7 @@
 
-from this import db.txt
+# автор Нина Дубовец
+
+
 
 def get_surname():
     surname = input('Фамилия:')
@@ -13,16 +15,20 @@ def get_data():
     return list
 
 def get_name():
-    name = input('Имя:')
+    name = input('Имя: ')
     return name
 
 def get_number():
-    number = input('№ телефона:')
+    number = input('№ телефона: ')
     return number
 
 def get_description():
-    description = input('Описание')
+    description = input('Описание: ')
     return description
 
-def data_collection():
-    return (get_surname(),get_data(), get_name(), get_number(),get_description())    
+def input_data():
+    f = open('db.txt', 'a')
+    str = '\n'+get_surname()+","+get_name()+','+get_number()+','+get_description()
+    f.write(str)
+    print('Данные добавлены')
+    f.close()

@@ -4,6 +4,7 @@
 import func1
 import Convert1
 import view
+import TELBOOKINPUT
 
 
 command=0
@@ -13,7 +14,7 @@ while exitflag==0:
     try:
         command =int(input())
         if command==1:
-            print('1 ok')
+            TELBOOKINPUT.input_data()
         elif command == 2:
             func1.fun1()
             exitflag = 1 # если хотим завершить программу
