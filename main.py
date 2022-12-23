@@ -2,6 +2,7 @@
 # main module 
 
 import func1
+import search
 import Convert1
 import view
 import TELBOOKINPUT
@@ -24,6 +25,9 @@ while exitflag==0:
             Convert1.Convert()
             view.conv1ok()
             exitflag = 1
+        elif command == 4:
+            search.search()
+            exitflag = 1     
         else:
             view.printerror()
     except:
